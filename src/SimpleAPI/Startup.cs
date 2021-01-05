@@ -49,6 +49,7 @@ namespace SimpleAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            //add comments
 
             app.UseEndpoints(endpoints =>
             {
