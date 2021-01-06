@@ -23,7 +23,7 @@ namespace SimpleAPI.Test
         #region TestMethods
         [Theory]
         [InlineData(1, new double[]{2,3,4,5,10}, 1200)]
-        [InlineData(2, new double[]{4,0}, 0)]
+        [InlineData(2, new double[]{4,2}, 2)]
         [InlineData(3, new double[]{2,9,0}, 11)]
         public async Task CalculateNumbers_ShouldReturnADouble_Multiply(int operation, double[] numbers, double expectedValue)
         {
