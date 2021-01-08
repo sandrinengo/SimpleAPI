@@ -24,7 +24,7 @@ namespace SimpleAPI.Controllers
         }
 
         [HttpGet]
-         [Route("api/getall")]
+        [Route("api/getall")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

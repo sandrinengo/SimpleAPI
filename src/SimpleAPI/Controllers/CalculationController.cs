@@ -27,7 +27,9 @@ namespace SimpleAPI.Controllers
         ///<param name="operation">Math operations accept int: 1-multiply, 2-divide, 3-add, 4-substract</param>
         ///<param name="numbers">double array</param>
         ///</summary>
-        public async Task<double> CalculateNumbers(int operation, double[] numbers)
+         [HttpGet]
+         [Route("api/getcalculation")]
+        public async Task<double> CalculateNumbers(int operation, [FromQuery] double[] numbers)
         {
             double result = 0;
             try
