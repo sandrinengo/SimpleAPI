@@ -50,6 +50,8 @@ namespace SimpleAPI
 
             app.UseAuthorization();
 
+            //This is a test from my new keyboard Logitech
+
             app.UseEndpoints(endpoints =>
             {
                 // endpoints.MapControllerRoute(

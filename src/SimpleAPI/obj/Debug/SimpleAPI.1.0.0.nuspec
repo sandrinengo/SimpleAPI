@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SimpleAPI</id>
+    <version>1.0.0</version>
+    <authors>SimpleAPI</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="5.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.OpenIdConnect" version="5.0.1" exclude="Build,Analyzers" />
+        <dependency id="Moq" version="4.15.2" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore" version="5.6.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net5.0/appsettings.Development.json" buildAction="Content" />
+      <files include="any/net5.0/appsettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\bin\Debug\net5.0\SimpleAPI.runtimeconfig.json" target="lib\net5.0\SimpleAPI.runtimeconfig.json" />
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\bin\Debug\net5.0\SimpleAPI.dll" target="lib\net5.0\SimpleAPI.dll" />
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\appsettings.Development.json" target="contentFiles\any\net5.0\appsettings.Development.json" />
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\appsettings.json" target="content\appsettings.json" />
+    <file src="D:\Study\Tutorials\WebAPI_MVC\Projects\SimpleAPIsln\src\SimpleAPI\appsettings.json" target="contentFiles\any\net5.0\appsettings.json" />
+  </files>
+</package>
